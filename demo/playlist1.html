@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MediaElement.js 3.0 - Playlist Plugin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
+<link rel="stylesheet" href="../dist/playlist/playlist.css">
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+	<div id="container">
+
+		<h1>Առաջին բաժին</h1>
+		<p>
+			<a href="index.html">Back to Main</a>
+		</p>
+
+		<p>Այստեղ պետք է տեղադրել հետևյալ օրենքների խմբի մասին կառճ
+			բացատրություն․</p>
+
+		<h2>Ռուբեն Հախվերդյան</h2>
+
+		<div class="media-wrapper">
+			<audio id="player2" preload="none" controls width="750" height="600"
+				data-cast-title="Ռուբեն Հախվերդյան"
+				data-cast-description="This is a description for audio only"
+				data-cast-poster="http://mediaelementjs.com/images/big_buck_bunny.jpg">
+				
+				<source src="./audio/Ruben_hakhverdyan-ImPoqrikNavak.mp3" type="audio/mp3" title="Իմ Փոքրիկ Նավակ "
+					data-playlist-description="Այստեղ պետք է տեղադրել աուդիո բովանդակության մասին կառճ բացատրություն․">
+				<source src="./audio/Ruben_hakhverdyan-ImMiakSere.mp3"
+					type="audio/mp3" title="Իմ Միակ Սերը"
+					data-playlist-description="Այստեղ պետք է տեղադրել աուդիո բովանդակության մասին կառճ բացատրություն․">
+				<source src="./audio/Ruben_hakhverdyan-Hin_nker_5_55.mp3"
+					type="audio/mp3" title="Հին Ընկեր"
+					data-playlist-description="Այստեղ պետք է տեղադրել աուդիո բովանդակության մասին կառճ բացատրություն․">
+				<source src="./audio/Ruben_hakhverdyan-Lavaguin_tgherqe_4_56.mp3"
+					type="audio/mp3" title="Լավագույն Տղերքը"
+					data-playlist-description="Այստեղ պետք է տեղադրել աուդիո բովանդակության մասին կառճ բացատրություն․">
+				<source src="./audio/Ruben_Hakhverdyan-Sardostayn.mp3"
+					type="audio/mp3" title="Սառդոստայն"
+					data-playlist-description="Այստեղ պետք է տեղադրել աուդիո բովանդակության մասին կառճ բացատրություն․">
+				<source src="./audio/Ruben_Hakhverdyan-ChermakDzis.mp3"
+					type="audio/mp3" title="Ճերմակ Ձիս"
+					data-playlist-description="Այստեղ պետք է տեղադրել աուդիո բովանդակության մասին կառճ բացատրություն․">
+				<source src="./audio/Ruben_Hakhverdyan-YeteImanai.mp3" type="audio/mp3" title="Եթե Իմանաի" data-playlist-description="Այստեղ պետք է տեղադրել աուդիո բովանդակության մասին կառճ բացատրություն․">
+				<source src="./audio/Ruben_Hakhverdyan-ernek_te_ays_nor_tarin.mp3" type="audio/mp3" title="Երնեկ Թե Այսօր Նոր Տառի Լիներ" data-playlist-description="Այստեղ պետք է տեղադրել աուդիո բովանդակության մասին կառճ բացատրություն․">
+				<source
+					src="./audio/Ruben_Hakhverdyan-feat_Lilit_Pipoyan-Mer_siro_ashun.mp3"
+					type="audio/mp3" title="Մեր Սիրո Աշունը"
+					data-playlist-description="Լիլիթ Պիպոյան - Ռուբեն Հախվրդըան - Մեր Սիռո Աշունը․">
+			</audio>
+		</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js"></script>
+<script src="../dist/playlist/playlist.js"></script>
+<script>
+	var mediaElements = document.querySelectorAll('video, audio');
+
+	for (var i = 0, total = mediaElements.length; i < total; i++) {
+		new MediaElementPlayer(mediaElements[i], {
+			features: ['prevtrack', 'playpause', 'nexttrack', 'current', 'progress', 'duration', 'volume', 'playlist', 'shuffle', 'loop', 'fullscreen'],
+		});
+	}
+</script>
+</body>
+</html>

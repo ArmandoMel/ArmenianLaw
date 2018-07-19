@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MediaElement.js 3.0 - Plugins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <style>
+        body{
+            margin: 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        p {
+            margin: 0 15px;
+        }
+        .wrapper{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            padding: 0 15px;
+        }
+        .footer {
+            height: 50px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+            color: #000;
+        }
+        .columns{
+            display: flex;
+            flex:1;
+        }
+        .main{
+            flex: 1;
+            order: 2;
+        }
+        .sidebar-first{
+            width: 33%;
+            order: 1;
+        }
+        .sidebar-second{
+            width: 33%;
+            order: 3;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1><img src="./demo/Title.png"></h1>
+            <p>Following is the list of examples of the available plugins for MediaElement player</p>
+        </header>
+        <section class="content">
+            <div class="columns">
+                <main class="main">
+                 <ul>
+                        <li><a href="./demo/playlist6.html">Բաժին 6</a></li>
+                        <li><a href="./demo/playlist7.html">Բաժին 7</a></li>
+                        <li><a href="./demo/playlist8.html">Բաժին 8</a></li>
+                        <li><a href="./demo/playlist9.html">Բաժին 9</a></li>
+                        <li><a href="./demo/playlist10.html">Բաժին 10</a></li>
+                    </ul>
+                   
+                </main>
+                <aside class="sidebar-first">
+                    <ul>
+                        <li><a href="./demo/playlist1.html">Բաժին 1</a></li>
+                        <li><a href="./demo/playlist2.html">Բաժին 2</a></li>
+                        <li><a href="./demo/playlist3.html">Բաժին 3</a></li>
+                        <li><a href="./demo/playlist4.html">Բաժին 4</a></li>
+                        <li><a href="./demo/playlist5.html">Բաժին 5</a></li>
+                    </ul>
+                </aside>
+
+                <aside class="sidebar-second">
+                    <ul>
+                        <li><a href="./demo/playlist11.html">Բաժին 11</a></li>
+                        <li><a href="./demo/playlist12.html">Բաժին 12</a></li>
+                        <li><a href="./demo/playlist13.html">Բաժին 13</a></li>
+                        <li><a href="./demo/playlist14.html">Բաժին 14</a></li>
+                        <li><a href="./demo/playlist15.html">Բաժին 15</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
